@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 warn package.json @ No description
+6 warn package.json @ No repository field.
+7 warn package.json @ No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ '/home/sammita/Downloads/chapter-1/2-examples',
+9 verbose install   [ 'underscore' ] ]
+10 info preinstall @
+11 verbose readDependencies using package.json deps
+12 verbose cache add [ 'underscore@1.5.2', null ]
+13 verbose cache add name=undefined spec="underscore@1.5.2" args=["underscore@1.5.2",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'underscore@1.5.2',
+14 verbose parsed url   path: 'underscore@1.5.2',
+14 verbose parsed url   href: 'underscore@1.5.2' }
+15 verbose cache add name="underscore" spec="1.5.2" args=["underscore","1.5.2"]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: '1.5.2',
+16 verbose parsed url   path: '1.5.2',
+16 verbose parsed url   href: '1.5.2' }
+17 verbose addNamed [ 'underscore', '1.5.2' ]
+18 verbose addNamed [ '1.5.2', '1.5.2' ]
+19 silly lockFile 669f6cbc-underscore-1-5-2 underscore@1.5.2
+20 verbose lock underscore@1.5.2 /home/sammita/.npm/669f6cbc-underscore-1-5-2.lock
+21 verbose request where is /underscore
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id bc39930ceda6ec43
+24 verbose url raw /underscore
+25 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+26 verbose url resolved https://registry.npmjs.org/underscore
+27 verbose request where is https://registry.npmjs.org/underscore
+28 info trying registry request attempt 1 at 21:55:07
+29 http GET https://registry.npmjs.org/underscore
+30 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139706743809920:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:795:
+31 info trying registry request attempt 2 at 21:55:17
+32 http GET https://registry.npmjs.org/underscore
+33 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139706743809920:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:795:
+34 info trying registry request attempt 3 at 21:56:17
+35 http GET https://registry.npmjs.org/underscore
+36 silly lockFile 669f6cbc-underscore-1-5-2 underscore@1.5.2
+37 silly lockFile 669f6cbc-underscore-1-5-2 underscore@1.5.2
+38 error network tunneling socket could not be established, cause=139706743809920:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:795:
+38 error network
+38 error network This is most likely not a problem with npm itself
+38 error network and is related to network connectivity.
+38 error network In most cases you are behind a proxy or have bad network settings.
+38 error network
+38 error network If you are behind a proxy, please make sure that the
+38 error network 'proxy' config is set properly.  See: 'npm help config'
+39 error System Linux 3.19.0-25-generic
+40 error command "/usr/bin/node" "/usr/bin/npm" "install"
+41 error cwd /home/sammita/Downloads/chapter-1/2-examples
+42 error node -v v0.10.37
+43 error npm -v 1.4.28
+44 error code ECONNRESET
+45 verbose exit [ 1, true ]
